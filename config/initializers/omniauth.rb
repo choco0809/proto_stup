@@ -1,6 +1,6 @@
 Rails.application.config.middleware.use OmniAuth::Builder do
   provider :discord,
-           Rails.application.credentials.discord[:client_id],
-           Rails.application.credentials.discord[:client_secret],
+           ENV['CLIENT_ID'],
+           ENV['CLIENT_SECRET'],
            scope: 'email'
 end

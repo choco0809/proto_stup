@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  get 'user/index'
+  get 'user/edit'
   root 'home#index'
 
   get 'auth/:provider/callback', to: 'sessions#create'

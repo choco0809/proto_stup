@@ -7,4 +7,3 @@ Rails.application.routes.draw do
 
   resources :sessions, only: %i[create destroy]
 end
-x``
